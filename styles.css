@@ -1,0 +1,48 @@
+:root {
+  --font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  width: 355px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.image-details {
+  width: 350px;
+  background-color: hsl(0, 0%, 100%);
+}
+.image-perfume-btn {
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+}
+.image-perfume-btn:hover {
+  
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
