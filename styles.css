@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
 :root {
+  --primary-color: hsl(158, 36%, 37%);
+  --secondary-color: hsl(30, 38%, 92%);
+  /* Neutral colors */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
   --font-size: 14px;
-  background-color: hsl(30, 38%, 92%);
+  background-color: var(--secondary-color);
   margin: 0;
   padding: 0;
 }
-
-/* body {
-  margin: 0;
-  padding: 0;
-} */
 
 .app {
   display: flex;
@@ -22,24 +27,74 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* width: 345px; */
+  width: auto;
+  height: auto;
 }
 
 .image {
-  width: 355px;
+  width: 345px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .image-details {
-  width: 350px;
   background-color: hsl(0, 0%, 100%);
+  width: 295px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.image-perfume-btn {
+h1 {
+  color: var(--dark-grayish-blue);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+.perfume {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0px;
+}
+.text {
+  color: var(--dark-grayish-blue);
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--font-size);
+  line-height: 1.8;
+}
+.price {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  vertical-align: middle;
+  margin: 20px;
+}
+button {
   color: white;
   background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  border: none;
+  width: 295px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
-.image-perfume-btn:hover {
-  
+button:hover {
+  background-color: hsl(158, 50%, 21%);
 }
+
 
 .attribution {
   display: flex;
