@@ -10,7 +10,15 @@
 <body>
   <main class="app">
     <div class="container">
-      <img src="./images/image-product-mobile.jpg" alt="perfume gabrielle essence eau de parfum" class="image">
+      <!-- <img class="image" 
+        src="./images/image-product-mobile.jpg"
+        alt="perfume gabrielle essence eau de parfum"> -->
+      <picture>
+        <source media="(max-width: 704px)" srcset="./images/image-product-mobile.jpg" />
+        <source media="(min-width: 705px" srcset="./images/image-product-desktop.jpg" />
+        <img class="image" src="./images/image-product-desktop.jpg" alt="perfume" />
+      </picture>
+      
       <div class="image-details">
         <h1>P E R F U M E</h1>
         <p class="perfume">Gabrielle Essence Eau De Parfum</p>
@@ -18,7 +26,7 @@
         <p class="price">$149.99<span>$169.99</span></p>
         <button class="image-perfume-btn">
           <img src="./images/icon-cart.svg">
-          Add to Cart
+          <span class="add">Add to Cart</span>
         </button>
       </div>
     </div>

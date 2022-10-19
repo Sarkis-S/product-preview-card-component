@@ -22,22 +22,19 @@
   align-items: center;
   height: 100vh;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* width: 345px; */
   width: auto;
   height: auto;
 }
-
 .image {
+  display: block;
   width: 345px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .image-details {
   background-color: hsl(0, 0%, 100%);
   width: 295px;
@@ -57,6 +54,7 @@ h1 {
 .perfume {
   font-family: 'Fraunces', serif;
   font-size: 32px;
+  color: var(--very-dark-blue);
   line-height: 1;
   margin: 0px;
 }
@@ -72,6 +70,11 @@ h1 {
   color: var(--primary-color);
   margin-top: 20px;
   margin-bottom: 0px;
+}
+.add {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 5px;
 }
 span {
   font-family: 'Montserrat', sans-serif;
@@ -89,15 +92,26 @@ button {
   width: 295px;
   height: 50px;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 button:hover {
   background-color: hsl(158, 50%, 21%);
 }
-
-
 .attribution {
   display: flex;
   justify-content: center;
   padding: 5px;
+}
+
+@media screen and (min-width: 705px) {
+  .image {
+    /* content: url('./images/image-product-desktop.jpg'); */
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .image-details {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
 }
