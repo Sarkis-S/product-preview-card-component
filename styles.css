@@ -59,16 +59,20 @@ h1 {
   margin: 0px;
 }
 .text {
+  width: 292px;
   color: var(--dark-grayish-blue);
   font-family: 'Montserrat', sans-serif;
   font-size: var(--font-size);
   line-height: 1.8;
+  margin-bottom: 10px;
 }
 .price {
+  display: flex;
+  align-items: center;
   font-family: 'Fraunces', serif;
   font-size: 32px;
   color: var(--primary-color);
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 .add {
@@ -85,17 +89,20 @@ span {
   margin: 20px;
 }
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: hsl(158, 36%, 37%);
   border-radius: 10px;
   border: none;
   width: 295px;
   height: 50px;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 button:hover {
-  background-color: hsl(158, 50%, 21%);
+  background-color: hsl(158, 52%, 12%);
 }
 .attribution {
   display: flex;
@@ -106,12 +113,35 @@ button:hover {
 @media screen and (min-width: 705px) {
   .image {
     /* content: url('./images/image-product-desktop.jpg'); */
+    width: 260px;
+    height: 100%;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
   }
   .image-details {
+    width: 225px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 10px;
+  }
+  h1 {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .perfume {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .text {
+    font-size: 12px;
+    width: 205px;
+  }
+  button {
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .cart-image {
+    width: 14px;
   }
 }
