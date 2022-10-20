@@ -44,19 +44,19 @@
   border-bottom-right-radius: 10px;
 }
 h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+  line-height: 1;
+  margin: 0px;
+}
+.perfume {
   color: var(--dark-grayish-blue);
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 0.75rem;
   padding-top: 15px;
   padding-bottom: 0px;
-}
-.perfume {
-  font-family: 'Fraunces', serif;
-  font-size: 2rem;
-  color: var(--very-dark-blue);
-  line-height: 1;
-  margin: 0px;
 }
 .text {
   width: 292px;
@@ -80,11 +80,10 @@ h1 {
   text-decoration: none;
   margin-left: 5px;
 }
-span {
+del {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.75rem;
   color: var(--dark-grayish-blue);
-  text-decoration: line-through;
   vertical-align: middle;
   margin: 20px;
 }
@@ -124,11 +123,11 @@ button:hover {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 10px;
   }
-  h1 {
+  .perfume {
     font-size: 0.6875rem;
     margin-top: 10px;
   }
-  .perfume {
+  h1 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
