@@ -46,7 +46,7 @@ This was a simpler component as there are only two separate containers. The stru
 
 ### What I learned
 
-This one is a little tricky with regards to image swapping for responsiveness. I've learned of several ways to do so. Starting with the less preferred option, which involves creating a div container and setting its background image within:
+The first challenge is a little tricky with regards to image swapping for responsiveness. I've learned of several ways to do so. Starting with the less preferred option, which involves creating a div container and setting its background image within:
 
 ```
 #div {
@@ -88,11 +88,30 @@ I have commented out the solution above in my challenge for future references. T
 
 This is the preferred method, but is supported by modern browsers. The full benefits of this method can be read in MDN docs which I have provided below.
 
+The second challenge was accessibility for the blind or visually impaired. I found some ways to handle screen readers on old price tags, but only one solution fits this challenge. 
+
+The code is this:
+
+```
+<del aria-label="old price">$19</del>
+```
+
+Withtout the aria-label, two price tags would have been read aloud. With this, it would indicate the $19 pricing is disabled and announce that it is an "old price." 
+
+I found that <del> or <s> can be used. There doesn't seem to be a clear standard as I'm also seeing examples where a div is used to style a strike-through on old pricing. 
+
+The solution I have seems to work best. Another option would have been `aria-hidden="true'` which would have effectively stopped the screen reader from reading the old price out loud. However, I want to give the deaf the same meaningful experience. That the price they received is a discounted price.
+
+The last solution required more CSS whereby it would read a hidden text outloud only to screen readers. I thought it was unncessary and opt for my quick solution instead.
+
 
 ### Useful resources
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - Talks about responsive images. A must read!
 - [Stack Overflow Discussion](https://stackoverflow.com/questions/30460681/changing-image-src-depending-on-screen-size) - You can see other examples here that I've tried my hands on.
+
+- [Accessibility Guideline 1](https://accessiblewebsiteservices.com/accessible-ecommerce-the-strike-through-strikes-out/)
+- [Accessibility Guideline 2](https://a11y-guidelines.orange.com/en/web/components-examples/price-vocalization/)
 
 ## Author
 
