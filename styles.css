@@ -102,6 +102,7 @@ button {
 }
 button:hover {
   background-color: hsl(158, 52%, 12%);
+  cursor: pointer;
 }
 .attribution {
   display: flex;
