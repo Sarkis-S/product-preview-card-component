@@ -98,7 +98,7 @@ The code is this:
 
 Withtout the aria-label, two price tags would have been read aloud. With this, it would indicate the $19 pricing is disabled and announce that it is an "old price." 
 
-I found that <del> or <s> can be used. There doesn't seem to be a clear standard as I'm also seeing examples where a div is used to style a strike-through on old pricing. 
+I found that `<del>` or `<s>` can be used. There doesn't seem to be a clear standard as I'm also seeing examples where a div is used to style a strike-through on old pricing. 
 
 The solution I have seems to work best. Another option would have been `aria-hidden="true'` which would have effectively stopped the screen reader from reading the old price out loud. However, I want to give the deaf the same meaningful experience. That the price they received is a discounted price.
 
